@@ -139,45 +139,46 @@ public class ControlFlowExercises {
 //            System.out.println("Bye Bye");
 //        }
 //////////////////////////////////////////////
-        Scanner scanner = new Scanner(System.in);
-        String userConfirmation = "y";
-        while(userConfirmation.equalsIgnoreCase("y")){
-            System.out.println("Enter a grade between 0 and 100.");
-            int userGrade = scanner.nextInt();
-            if(userGrade >= 97 && userGrade <=100){
-                System.out.println("Your letter grade is an A+.");
-            } else if (userGrade >= 93 && userGrade <= 96) {
-                System.out.println("Your letter grade is a A.");
-            } else if (userGrade >= 90 && userGrade <= 92) {
-                System.out.println("Your letter grade is a A-.");
-            } else if (userGrade >= 87 && userGrade <= 89) {
-                System.out.println("Your letter grade is a B+.");
-            } else if (userGrade >= 83 && userGrade <= 86) {
-                System.out.println("Your letter grade is a B.");
-            } else if (userGrade >= 80 && userGrade <= 82) {
-                System.out.println("Your letter grade is a B-.");
-            } else if (userGrade >= 77 && userGrade <= 79) {
-                System.out.println("Your letter grade is a C-.");
-            } else if (userGrade >= 73 && userGrade <= 76) {
-                System.out.println("Your letter grade is a C.");
-            } else if (userGrade >= 70 && userGrade <= 72) {
-                System.out.println("Your letter grade is a C-.");
-            } else if (userGrade >= 67 && userGrade <= 69) {
-                System.out.println("Your letter grade is a D+.");
-            } else if (userGrade >= 65 && userGrade <= 66) {
-                System.out.println("Your letter grade is a D.");
-            } else if (userGrade >= 60 && userGrade <= 64) {
-                System.out.println("Your letter grade is a D-.");
-            } else if (userGrade <= 59) {
-                System.out.println("Your letter grade is F.");
-            } else{
-                System.out.println("Please enter a valid numerical integer between 0 and 100");
-            }
-
-            System.out.println("Would you like to continue converting your numerical grades to letter grades? (Y/N)");
-            userConfirmation = scanner.next();
-            System.out.println();
-        }
+        
+//        Scanner scanner = new Scanner(System.in);
+//        String userConfirmation = "y";
+//        while(userConfirmation.equalsIgnoreCase("y")){
+//            System.out.println("Enter a grade between 0 and 100.");
+//            int userGrade = scanner.nextInt();
+//            if(userGrade >= 97 && userGrade <=100){
+//                System.out.println("Your letter grade is an A+.");
+//            } else if (userGrade >= 93 && userGrade <= 96) {
+//                System.out.println("Your letter grade is a A.");
+//            } else if (userGrade >= 90 && userGrade <= 92) {
+//                System.out.println("Your letter grade is a A-.");
+//            } else if (userGrade >= 87 && userGrade <= 89) {
+//                System.out.println("Your letter grade is a B+.");
+//            } else if (userGrade >= 83 && userGrade <= 86) {
+//                System.out.println("Your letter grade is a B.");
+//            } else if (userGrade >= 80 && userGrade <= 82) {
+//                System.out.println("Your letter grade is a B-.");
+//            } else if (userGrade >= 77 && userGrade <= 79) {
+//                System.out.println("Your letter grade is a C-.");
+//            } else if (userGrade >= 73 && userGrade <= 76) {
+//                System.out.println("Your letter grade is a C.");
+//            } else if (userGrade >= 70 && userGrade <= 72) {
+//                System.out.println("Your letter grade is a C-.");
+//            } else if (userGrade >= 67 && userGrade <= 69) {
+//                System.out.println("Your letter grade is a D+.");
+//            } else if (userGrade >= 65 && userGrade <= 66) {
+//                System.out.println("Your letter grade is a D.");
+//            } else if (userGrade >= 60 && userGrade <= 64) {
+//                System.out.println("Your letter grade is a D-.");
+//            } else if (userGrade <= 59) {
+//                System.out.println("Your letter grade is F.");
+//            } else{
+//                System.out.println("Please enter a valid numerical integer between 0 and 100");
+//            }
+//
+//            System.out.println("Would you like to continue converting your numerical grades to letter grades? (Y/N)");
+//            userConfirmation = scanner.next();
+//            System.out.println();
+//        }
 
 
 
