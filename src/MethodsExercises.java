@@ -18,36 +18,25 @@ import java.util.Scanner;
 
 public class MethodsExercises {
     /////METHODS
-    public static int Addition() {
-        Scanner scanner = new Scanner(System.in);
-        int numOne = scanner.nextInt();
-        int numTwo = scanner.nextInt();
+    public static int Addition(int numOne , int numTwo) {
         int addedSum = numOne + numTwo;
         return addedSum;
     }
 
 
-    public static int Subtraction() {
-        Scanner scanner = new Scanner(System.in);
-        int numOne = scanner.nextInt();
-        int numTwo = scanner.nextInt();
+    public static int Subtraction(int numOne , int numTwo) {
         int subtractedSum = numOne - numTwo;
         return subtractedSum;
     }
 
-    public static int Multiplication() {
-        Scanner scanner = new Scanner(System.in);
-        int numOne = scanner.nextInt();
-        int numTwo = scanner.nextInt();
+
+    public static int Multiplication(int numOne , int numTwo) {
         int multipliedSum = numOne * numTwo;
         return multipliedSum;
     }
 
 
-    public static String Division() {
-        Scanner scanner = new Scanner(System.in);
-        int numOne = scanner.nextInt();
-        int numTwo = scanner.nextInt();
+    public static String Division(int numOne , int numTwo) {
 
         if (numTwo == 0) {
             return "Zero Division error : Program Crash Prevented ";
@@ -62,22 +51,31 @@ public class MethodsExercises {
 
     ////// MAIN
     public static void main(String[] args) {
-        System.out.println("Enter Two Numbers");
-        int addedNumbers = Addition();
-        System.out.println(addedNumbers);
+//        System.out.println("Enter Two Numbers");
+//        Scanner scanner = new Scanner(System.in);
+//        int numOne = scanner.nextInt();
+//        int numTwo = scanner.nextInt();
+//        System.out.println(Addition(numOne,numTwo));
 
 
-        System.out.println("Enter Two Numbers");
-        int subtractedNumbers = Subtraction();
-        System.out.println(subtractedNumbers);
+//        System.out.println("Enter Two Numbers");
+//        Scanner scanner = new Scanner(System.in);
+//        int numOne = scanner.nextInt();
+//        int numTwo = scanner.nextInt();
+//        System.out.println(Subtraction(numOne,numTwo));
 
-        System.out.println("Enter Two Numbers");
-        int multipliedSumOfNumbers = Multiplication();
-        System.out.println(multipliedSumOfNumbers);
 
-        System.out.println("Enter Two Numbers");
-        String dividedNumbers = Division();
-        System.out.println(dividedNumbers);
+//        System.out.println("Enter Two Numbers");
+//        Scanner scanner = new Scanner(System.in);
+//        int numOne = scanner.nextInt();
+//        int numTwo = scanner.nextInt();
+//        System.out.println(Multiplication(numOne,numTwo));
+
+//        System.out.println("Enter Two Numbers");
+//        Scanner scanner = new Scanner(System.in);
+//        int numOne = scanner.nextInt();
+//        int numTwo = scanner.nextInt();
+//        System.out.println(Division(numOne,numTwo));
 
 
     }

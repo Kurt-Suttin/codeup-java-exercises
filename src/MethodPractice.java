@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class MethodPractice {
 
 //    public static String returnName() {
+//        System.out.println("enter your name");
 //        Scanner scanner = new Scanner(System.in);
 //        String userInput = scanner.nextLine();
 //        scanner.close();
@@ -17,23 +18,23 @@ public class MethodPractice {
 //        return trimmedInput;
 //    }
 
-    public static String returnLongerString() {
-
-        Scanner scanner = new Scanner(System.in);
-        // take in 2 strings
-        System.out.println("Enter the first string:");
-        String str1 = scanner.nextLine();
-        System.out.println("Enter the second string:");
-        String str2 = scanner.nextLine();
-        // return longest of strings
-        if (str1.length() > str2.length()) {
-            return str1;
-        } else if (str2.length() > str1.length()) {
-            return str2;
-        } else {
-            return "Both strings are of equal length.";
-        }
-    }
+//    public static String returnLongerString() {
+//
+//        Scanner scanner = new Scanner(System.in);
+//        // take in 2 strings
+//        System.out.println("Enter the first string:");
+//        String str1 = scanner.nextLine();
+//        System.out.println("Enter the second string:");
+//        String str2 = scanner.nextLine();
+//        // return longest of strings
+//        if (str1.length() > str2.length()) {
+//            return str1;
+//        } else if (str2.length() > str1.length()) {
+//            return str2;
+//        } else {
+//            return "Both strings are of equal length.";
+//        }
+//    }
 
 
     public static boolean canBeHalved(int userInput) {
@@ -50,15 +51,15 @@ public class MethodPractice {
 
     public static void main(String[] args) {
 
-        // Declare a var to returned value by calling Method Name
-
+//        // Declare a var to returned value by calling Method Name
+//
 //        String name = returnName();
 //        System.out.println("Your name is : " + name);
-
-        // Declare a var to returned value by calling Method Name
+//
+//        // Declare a var to returned value by calling Method Name
 //        String longerString = returnLongerString();
 //        System.out.println(longerString);
-
+//
 
 
         // get user number
