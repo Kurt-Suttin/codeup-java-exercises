@@ -1,10 +1,21 @@
 public class Person {
 
-///INSTANCE PROPERTIES
+    ///INSTANCE PROPERTIES
     private String name;
 
+    //// constructor///
+    public Person(String name) {
+        this.name = name;
+    }
 
-//////////////METHODS
+    ;
+//    public Person(String name){
+//        this.name = name;
+//    }
+//
+
+
+    //////////////METHODS
     public String getName() {
 //TODO: return the person's name
         return this.name;
@@ -13,7 +24,7 @@ public class Person {
 
     public void setName(String name) {
 //TODO: change the name field to the passed value
- this.name = name;
+        this.name = name;
 
     }
 
