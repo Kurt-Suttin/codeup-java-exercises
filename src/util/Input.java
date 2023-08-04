@@ -33,7 +33,8 @@ public class Input {
         return scanner.nextLine();
     }
 
-    boolean yesNo() {
+   public boolean yesNo() {
+       System.out.println("[Y/n]");
         // get user input
         String answer = scanner.nextLine();
         /// return true if string == yes
@@ -47,7 +48,7 @@ public class Input {
 //    the user for input until they give an integer within the min and max.
 
 
-    int getInt(int min, int max) {
+    public int getInt(int min, int max) {
         int number;
 
         do {
@@ -66,7 +67,7 @@ public class Input {
 
 //    The getDouble method should do the same thing, but with decimal numbers.
 
-    double getDouble(double min, double max) {
+    public double getDouble(double min, double max) {
         double number;
 
         do {
@@ -82,4 +83,9 @@ public class Input {
         return number;
     }
 
+
+
+
+//    Create another class named
+//    InputTest that has a static main method that uses all the methods from the Input class.
 }
