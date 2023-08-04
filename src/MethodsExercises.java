@@ -88,6 +88,7 @@ public class MethodsExercises {
     }
 
     ///// Question 2
+    
     public static int getInteger(int min, int max) {
         Scanner scanner = new Scanner(System.in);
         int integer = scanner.nextInt();
