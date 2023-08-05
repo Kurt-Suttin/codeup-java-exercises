@@ -1,40 +1,23 @@
 package shapes;
 
 public class Circle {
-//    Inside of src, create a package named shapes.
-//    Inside of shapes, create a class named shapes.Circle.
-//    This class should have a private radius field that is set through the constructor,
-//    and various methods for getting information about the circle, detailed below.
-
+    /// INSTANCES
     private double radius;
-
     private double area;
-
     private double circumference;
-/// INSTANCES
-/// circumference = 2 x pi x radius
-//  area = pi x (radius ^ 2)
+// CONSTRUCTOR
     public Circle(double radius) {
         this.radius = radius;
-        System.out.println(radius);
+
+    }
+// GETTERS
+    public double getArea() {
+        this.area = 3.14159265359 * Math.pow(radius, 2);
+        return area;
     }
 
-
-    public double getArea(double radius){
-        this.radius = radius;
-        double areaResult = 3.14159265359 * (Math.pow(radius, 2));
-        System.out.println(areaResult);
-        return areaResult;
+    public double getCircumference() {
+        this.circumference = 2 * 3.14159265359 * radius;
+        return circumference;
     }
-
-
-//    circumference = 2 x pi x radius
-
-    public double getCircumference(double radius){
-        this.radius = radius;
-        double circumference = 2 * this.area;
-    }
-
-
-
 }
