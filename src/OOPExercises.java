@@ -5,7 +5,6 @@ public class OOPExercises {
         String kurtsName = kurt.getName();
         System.out.println(kurtsName);
         kurt.sayHello();
-
     }
 
 }

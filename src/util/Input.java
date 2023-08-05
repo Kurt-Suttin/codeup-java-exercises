@@ -26,27 +26,34 @@ public class Input {
     private Scanner scanner;
 
     public Input() {
-        scanner = new Scanner(System.in);
+       this.scanner = new Scanner(System.in);
     }
 
     public String getString() {
         return scanner.nextLine();
     }
 
-   public boolean yesNo() {
-       System.out.println("[Y/n]");
+    public boolean yesNo() {
+        System.out.println("[Y/n]");
         // get user input
         String answer = scanner.nextLine();
-        /// return true if string == yes
-        if (answer.equalsIgnoreCase("y")) {
+        // return true if the string is "y" or "yes" (case-insensitive)
+        if (answer.equalsIgnoreCase("y") || answer.equalsIgnoreCase("yes")) {
             return true;
-            // else return false if string == no
-        } else return false;
-
+        } else {
+            // else return false if the string is "n" or anything else
+            return false;
+        }
     }
 //    The getInt(int min, int max) method should keep prompting
 //    the user for input until they give an integer within the min and max.
 
+    public int getInt() {
+        System.out.println("enter any Integer");
+        int number;
+        number = scanner.nextInt();
+        return number;
+    }
 
     public int getInt(int min, int max) {
         int number;
@@ -65,7 +72,13 @@ public class Input {
     }
 
 
-//    The getDouble method should do the same thing, but with decimal numbers.
+    //    The getDouble method should do the same thing, but with decimal numbers.
+    public double getDouble() {
+        System.out.println("enter any number at all");
+        int number;
+        number = scanner.nextInt();
+        return number;
+    }
 
     public double getDouble(double min, double max) {
         double number;
@@ -82,8 +95,6 @@ public class Input {
 
         return number;
     }
-
-
 
 
 //    Create another class named
