@@ -7,21 +7,34 @@ public class ArraysExercises {
         // Iterate through the array and print out the name of each person in the array.
 
 
-        String[] people = new String[3];
-        Person kurt = new Person("Kurt");
-        Person ted = new Person("Ted");
-        Person eddy = new Person("Eddy");
-
-        people[0] = kurt.getName();
-        people[1] = ted.getName();
-        people[2] = eddy.getName();
+        Person[] people = new Person[]{
+                new Person("kurt"),
+                new Person("Ted"),
+                new Person("Eddy")
+        };
 
 
-        for (String person : people) {
-            System.out.println(person);
+        for (Person person : people) {
+            System.out.println(person.getName());
+
+
         }
-//Create a static method named addPerson.
 
+
+        addPerson(people, new Person("Steve"));
+
+        System.out.println(Arrays.toString(people));
+        for (Person person : people) {
+            System.out.println(person.getName());
+
+
+        }
+
+
+    }
+
+
+    //Create a static method named addPerson.
 
 
 // It should accept an array of Person objects,
@@ -29,10 +42,10 @@ public class ArraysExercises {
 // It should return an array whose length is 1 greater than the passed array,
 // with the passed person object at the end of the array.
 
-    }
-    public static String[] addPerson (String[]oldArray, String newPerson){
+
+    public static Person[] addPerson(Person[] people, Person newPerson) {
         ///copying old array and adding 1 extra index in the array
-        String[] newArray = Arrays.copyOf(oldArray, oldArray.length + 1);
+        Person[] newArray = Arrays.copyOf(people, people.length + 1);
         /// pushes (newPerson) to end of array
         newArray[newArray.length - 1] = newPerson;
         // return new version of array
