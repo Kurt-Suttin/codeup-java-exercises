@@ -1,42 +1,26 @@
-import shapes.Circle;
 import util.Input;
 
 public class InputTest {
     public static void main(String[] args) {
-        System.out.println("enter in a sentence.");
-        Input userString = new Input();
-        String usersStringResult = userString.getString();
-        System.out.println(usersStringResult);
-/////////MIN MAX
-        Input userNumberRange = new Input();
-        int userNumberRangeResult = userNumberRange.getInt(1, 100);
-        System.out.println(userNumberRangeResult);
+        Input input = new Input();
 
-///////////GET INT
-        Input userNumber = new Input();
-        int userNumberResult = userNumber.getInt();
-        System.out.println(userNumberResult);
+//        System.out.println("Please enter a string");
+//        System.out.println(input.getString());
 
+//        System.out.println("Do you want to continue? Y|N");
+//        System.out.println(input.yesNo());
 
-        Input userBoolean = new Input();
-        boolean userBooleanResult = userBoolean.yesNo();
-        System.out.println(userBooleanResult);
-/////////MIN MAX
-        Input userDoubleRange = new Input();
-        double userDoubleRangeResult = userDoubleRange.getDouble(1.0, 100.00);
-        System.out.println(userDoubleRangeResult);
+//        System.out.println("enter a number");
+//        System.out.println(input.getInt());
 
-///////// GET DOUBLE
-        Input userDouble = new Input();
-        double userDoubleResult = userDouble.getDouble();
-        System.out.println(userDoubleResult);
+//        System.out.println("enter a number between 1 and 10");
+//        System.out.println(input.getInt(1, 10));
+
+//        System.out.println("enter a number between 1.0 and 10.0");
+//        System.out.println(input.getDouble(1.0, 10.0));
+
+        System.out.println(input.getString("Please enter your name"));
+
     }
-
-
-    Circle firstCircle = new Circle(4.0);
-
-
-
-//    int firstCircleRadius = firstCircle.getArea();
-//    System.out.println();
 }
+

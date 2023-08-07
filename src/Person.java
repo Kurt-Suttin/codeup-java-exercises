@@ -8,12 +8,6 @@ public class Person {
         this.name = name;
     }
 
-    ;
-//    public Person(String name){
-//        this.name = name;
-//    }
-//
-
 
     //////////////METHODS
     public String getName() {

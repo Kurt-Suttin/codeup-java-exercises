@@ -15,13 +15,13 @@ public class Circle {
 
     // Method to calculate and return the area of the circle
     public double getArea() {
-        this.area = 3.14159265359 * Math.pow(radius, 2);
+        this.area = Math.PI * Math.pow(this.radius, 2);
         return area;
     }
 
     // Method to calculate and return the circumference of the circle
     public double getCircumference() {
-        this.circumference = 2 * 3.14159265359 * radius;
+        this.circumference = 2 * Math.PI * this.radius;
         return circumference;
     }
 }
