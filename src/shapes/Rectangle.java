@@ -2,6 +2,7 @@ package shapes;
 // It should have protected properties for both length and width.
 // Rectangle should define a constructor that accepts two numbers for length and width,
 // and sets those properties.
+
 public class Rectangle{
 
     //fields
@@ -9,7 +10,6 @@ public class Rectangle{
     protected int length;
 
     // constructor
-
     public Rectangle(int width,int length){
         this.width = width;
         this.length = length;
@@ -23,11 +23,11 @@ public class Rectangle{
 
     //Methods
     public int getArea(){
-        return (int) width * length;
+        return this.width * this.length;
     };
 
     public int getPerimeter(){
-        return (int) width * 2 + length * 2;
+        return this.width * 2 + this.length * 2;
     };
 
 

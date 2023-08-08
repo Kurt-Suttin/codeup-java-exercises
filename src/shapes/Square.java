@@ -6,10 +6,11 @@ public class Square extends Rectangle{
 
 ///In the Square class, override the getArea and getPerimeter methods
     //// with the following definitions for a square
+    // constructor
     public Square(int side) {
         super(side,side);
     }
-
+//overrides
     @Override
     public int getArea() {
         return width * width; // Area of a square is side * side
