@@ -35,15 +35,17 @@ public class GradesApplication {
         HashMap<String, Student> students = new HashMap<>();
 
         System.out.println(students.size());
-
-        students.put("Kurt7643", kurt);
+        ///// PUTTING THE STUDENTS IN HASH MAP
+        students.put("Kurt4269", kurt);
         students.put("Anthony7356", anthony);
         students.put("Erick07537", erick);
         students.put("Alice3689", alice);
 
         System.out.println(students.size());
         System.out.println(students);
-////
+
+
+/////////
 
 
         Input input = new Input();
@@ -68,7 +70,7 @@ public class GradesApplication {
                     System.out.println("No student found with that GitHub username.");
                 } else {
                     System.out.println("\nStudent Name: " + student.getName());
-                    System.out.println("Grades: " + student.grades);
+                    System.out.println("Grades: " + student.getGrades());
                     System.out.println("Average Grade: " + student.getGradeAverage());
                 }
             }

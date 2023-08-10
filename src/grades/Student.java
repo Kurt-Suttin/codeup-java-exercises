@@ -3,9 +3,9 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
-    protected ArrayList<Integer> grades;
+    private ArrayList<Integer> grades;
 
-    protected String name;
+   private String name;
 
     // The student class should have a constructor
     // that sets name property,
@@ -21,6 +21,18 @@ public class Student {
         return this.name;
     }
 
+    public ArrayList<Integer> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(ArrayList<Integer> grades) {
+        this.grades = grades;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     // adds the given grade to the grades property
     public void addGrade(double grade) {
      this.grades.add((int) grade);
@@ -29,7 +41,7 @@ public class Student {
     // returns the average of the students grades
     public double getGradeAverage() {
         double sum = 0;
-        for (double grade : grades) {
+        for (int grade : grades) {
             sum += grade;
         }return sum /grades.size();
     }
