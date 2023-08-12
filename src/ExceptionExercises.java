@@ -24,9 +24,24 @@ public class ExceptionExercises {
             System.out.println(e.getMessage());
         }
 
+        delayedHello(1000);
+        delayedHello(1000);
+        delayedHello(3000);
+
+
     }
 
     //STEP 2
     //
     //Add a main method and try calling the divideNums method with various arguments, including 0 for the second argument. Is IllegalArgumentException a checked or unchecked exception?
+
+    public static void delayedHello(int milliseconds) {
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("Hello World");
+    }
+
 }
